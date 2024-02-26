@@ -46,11 +46,19 @@ export default function App() {
     );
   }
 
+  function rollDice() {
+    setDice((oldDice) =>
+      oldDice.map((die) => {
+        return die.isHeld ? die : { ...die, value: getRandomint(1, 6) };
+      })
+    );
+  }
+
   return (
     <main>
       <div className="die-container">{diceGrid}</div>
 
-      <button className="roll-button" onClick={() => setDice(allNewDice())}>
+      <button className="roll-button" onClick={rollDice}>
         Roll babay!
       </button>
     </main>
