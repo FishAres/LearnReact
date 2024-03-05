@@ -1,0 +1,38 @@
+#root {
+  font-family: Karla, Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 1280px;
+  background-color: #f5f7fb;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #f5f7fb;
+}
+
+.blob1 {
+  width: 100px;
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+}
+
+.blob2 {
+  width: 100px;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+}
+
+.start-button {
+  height: 50px;
+  width: 150px;
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  border: none;
+  border-radius: 10px;
+  font-size: 16;
+}
